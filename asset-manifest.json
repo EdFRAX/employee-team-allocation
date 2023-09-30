@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.68ff5530.css",
-    "main.js": "/static/js/main.78bd0823.js",
-    "static/js/787.22ff5216.chunk.js": "/static/js/787.22ff5216.chunk.js",
-    "static/media/maleProfile.png": "/static/media/maleProfile.914c08714a88bd0c0117.png",
-    "static/media/femaleProfile.png": "/static/media/femaleProfile.e3b1bdbaf40cebe85b93.png",
-    "index.html": "/index.html",
-    "main.68ff5530.css.map": "/static/css/main.68ff5530.css.map",
-    "main.78bd0823.js.map": "/static/js/main.78bd0823.js.map",
-    "787.22ff5216.chunk.js.map": "/static/js/787.22ff5216.chunk.js.map"
+    "main.css": "/employee-team-allocation/static/css/main.68ff5530.css",
+    "main.js": "/employee-team-allocation/static/js/main.b22c2132.js",
+    "static/js/787.22ff5216.chunk.js": "/employee-team-allocation/static/js/787.22ff5216.chunk.js",
+    "static/media/maleProfile.png": "/employee-team-allocation/static/media/maleProfile.914c08714a88bd0c0117.png",
+    "static/media/femaleProfile.png": "/employee-team-allocation/static/media/femaleProfile.e3b1bdbaf40cebe85b93.png",
+    "index.html": "/employee-team-allocation/index.html",
+    "main.68ff5530.css.map": "/employee-team-allocation/static/css/main.68ff5530.css.map",
+    "main.b22c2132.js.map": "/employee-team-allocation/static/js/main.b22c2132.js.map",
+    "787.22ff5216.chunk.js.map": "/employee-team-allocation/static/js/787.22ff5216.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.68ff5530.css",
-    "static/js/main.78bd0823.js"
+    "static/js/main.b22c2132.js"
   ]
 }
