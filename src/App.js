@@ -110,7 +110,7 @@ function App() {
         memberCount={employees.filter((employee)=>selectedTeam === employee.teamName).length}
       />
       <Routes>
-        <Route path='/' element={
+        <Route path='/employee-team-allocation' element={
           <Main
             employees={employees}
             selectedTeam={selectedTeam}
