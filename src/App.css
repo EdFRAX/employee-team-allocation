@@ -1,0 +1,27 @@
+.navbar {
+    --bs-navbar-color:white !important;
+    --bs-navbar-hover-color:var(--bs-purple) !important;
+}
+
+.nav-link:focus {
+    color: white !important;
+}
+
+.form-select:focus {
+    border-color: var(--bs-border-color) !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.card-bordered {
+    box-shadow: 0 0 0px 4px var(--bs-gray-400);
+}
+
+.list-group-item, select {
+    cursor: pointer;
+}
