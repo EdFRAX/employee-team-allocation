@@ -1,6 +1,5 @@
 const Teams = ({employees, setTeam}) => {
     
-    let nothing = false;
     const addedTeam = [
         {teamName: "TeamA"},
         {teamName: "TeamB"},
@@ -19,32 +18,34 @@ const Teams = ({employees, setTeam}) => {
                         <ul className="list-group">
                             {
                                 addedTeam.map((employee, index) => 
-                                <div onClick={handleChangeTeam} title={employee.teamName} className="list-group-item list-group-item-action" data-bs-toggle="collapse" data-bs-target={'#'+employee.teamName}>
+                                <div onClick={handleChangeTeam} title={employee.teamName} className="list-group-item list-group-item-action" data-bs-toggle="collapse" data-bs-target={'#'+employee.teamName} key={index}>
                                     {employee.teamName}
                                     <div className="collapse" id={employee.teamName}>
                                     <hr/>
                                         {
-                                            employees.map((e)=>
-                                                e.teamName === employee.teamName ?
-                                                (
-                                                    <div className="card-body">
-                                                        <div className="card-title">
-                                                            <p>Name: {e.fullName}</p>
+                                            employees.filter((e) => e.teamName === employee.teamName)
+                                                    .map((em)=>
+                                                        <div className="card-body" key={em.id}>
+                                                            <div className="card-title">
+                                                                <p>Name: {em.fullName}</p>
+                                                            </div>
+                                                            <div className="card-text">
+                                                                <p>Designation: {em.designation}</p>
+                                                            </div>
+                                                            <hr className="border border-primary"/>
                                                         </div>
-                                                        <div className="card-text">
-                                                            <p>Designation: {e.designation}</p>
-                                                        </div>
-                                                        <hr className="border border-primary"/>
-                                                    </div>
-                                                ) : e.teamName === '' && !nothing ? (
-                                                    (nothing = true),
+                                                    )
+                                        }
+                                        {
+                                            employees
+                                                .filter((e)=>e.teamName === employee.teamName)
+                                                .length === 0 && (
                                                     <div className="card-body">
                                                         <div className="card-text">
                                                             <p>{employee.teamName} has no member.</p>
                                                         </div>
                                                     </div>
-                                                ) : null
-                                            )
+                                                )
                                         }
                                     </div>
                                 </div>

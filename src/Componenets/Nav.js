@@ -7,8 +7,8 @@ const Nav = () => {
                 <div className='navbar-brand'>
                     <a>Employee Team Allocation</a>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
-                    <span class="navbar-toggler-icon"></span>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
             </div>
             <div className="collapse navbar-collapse" id="navbar">
